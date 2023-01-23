@@ -160,7 +160,7 @@ class QuoPayload
      */
     private function getSenderDomain()
     {
-        return $_SERVER['HTTP_HOST'];
+        return isset($_SERVER['HTTP_HOST']) ? $_SERVER['HTTP_HOST'] : 'localhost';
     }
 
     /**
